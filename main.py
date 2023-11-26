@@ -74,7 +74,7 @@ class Prompt(ft.TextField):
 
 
         response = g4f.ChatCompletion.create(
-            model=g4f.models.gpt_35_turbo_16k,
+            model=g4f.models.gpt_4_32k,
             messages=self.messages)
 
 
@@ -123,5 +123,5 @@ def main(page: ft.Page):
     page.update()
 
 
-ft.app(target=main)
+ft.app(target=main, view=ft.AppView.WEB_BROWSER, web_renderer=ft.WebRenderer.HTML)
 
