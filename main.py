@@ -77,6 +77,7 @@ class Prompt(ft.TextField):
             model=g4f.models.gpt_35_turbo_16k,
             messages=self.messages)
 
+
         self.animate_text_output(name="ChatGPT", prompt=response)
 
         self.messages.append({"role": "assistant", "content": response})
@@ -122,6 +123,5 @@ def main(page: ft.Page):
     page.update()
 
 
-if __name__ == "__main__":
-    ft.app(target=main, view=ft.AppView.WEB_BROWSER)
+ft.app(target=main)
 
