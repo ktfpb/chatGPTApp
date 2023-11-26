@@ -1,0 +1,25 @@
+$ flet publish h
+positional arguments:
+script
+path to a Python script
+options:
+-h,
+=-help
+show this help message and exit
+-V, =-verbose
+-v for detailed output and -vv for more detailed
+--pre
+allow micropip to install pre-release Python packages
+-a ASSETS_DIR,
+--assets ASSETS_DIR
+path to an assets directory
+--app-title APP_TITLE
+application title
+--app-description APP_DESCRIPTION
+application description
+--base-urL BASE_URL
+base URL for the app
+--web-renderer {canvaskit, html}
+web renderer to use
+--route-url-strategy {path, hash}
+URL routing strategy
